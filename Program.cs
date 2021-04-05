@@ -101,7 +101,8 @@ namespace CSharpProject4
             //arrayTest.Test(); 
             //arrayTest.Test02();
             //arrayTest.Test03();
-            arrayTest.Test04();
+            //arrayTest.Test04();
+            arrayTest.Test05();
         }
     }
 }

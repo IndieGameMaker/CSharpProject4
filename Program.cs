@@ -44,7 +44,16 @@ namespace CSharpProject4
         //리스트(List)
         public void Test03()
         {
-            
+            List<string> messages = new List<string>();
+            messages.Add("Title");
+            messages.Add("User Name");
+            messages.Add("Level");
+            messages.Add("Gold");
+
+            for (int i=0; i<messages.Count; i++)
+            {
+                Console.WriteLine(messages[i]);
+            }
 
         }
     }

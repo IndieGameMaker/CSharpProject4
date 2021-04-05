@@ -109,6 +109,22 @@ namespace CSharpProject4
                 Console.WriteLine(ht["gold"]);
             }
         }
+
+        //Dictionary 딕셔너리
+        //박싱/언박싱 발생하지 않는다.
+        public void Test07()
+        {
+            Dictionary<int, string> dic = new Dictionary<int, string>();
+            for(int i=0; i<3; i++)
+            {
+                dic.Add(i, $"i={i:000}");
+            }
+
+            foreach(var _dic in dic)
+            {
+                Console.WriteLine($"{_dic.Key} = {_dic.Value}");
+            }
+        }
     }
 
     class Program

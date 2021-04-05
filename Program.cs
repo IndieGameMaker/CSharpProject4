@@ -91,6 +91,24 @@ namespace CSharpProject4
             }
 
         }
+    
+        //해시, 해시테이블 (Hash, HashTable)
+        //키(Key), 값(Value)
+        public void Test06()
+        {
+            Hashtable ht = new Hashtable();
+            
+            ht.Add("gold", 100);
+            ht.Add("silver", 50);
+            ht.Add("bronse", 10);
+
+            if (ht.ContainsKey("gold"))
+            {
+                Console.WriteLine(ht["gold"]);
+                ht["gold"] = 300;
+                Console.WriteLine(ht["gold"]);
+            }
+        }
     }
 
     class Program
@@ -102,7 +120,8 @@ namespace CSharpProject4
             //arrayTest.Test02();
             //arrayTest.Test03();
             //arrayTest.Test04();
-            arrayTest.Test05();
+            //arrayTest.Test05();
+            arrayTest.Test06();
         }
     }
 }

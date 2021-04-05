@@ -75,6 +75,22 @@ namespace CSharpProject4
                 Console.Write($"{value} , ");
             }
         }
+    
+        //큐(Queue) : 선입선출 (FIFO)
+        public void Test05()
+        {
+            Queue<int> queue = new Queue<int>();
+            for (int i=0;i<10; i++)
+            {
+                queue.Enqueue(i);
+            }
+
+            foreach(var value in queue)
+            {
+                Console.WriteLine(value);
+            }
+
+        }
     }
 
     class Program

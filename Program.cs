@@ -54,7 +54,26 @@ namespace CSharpProject4
             {
                 Console.WriteLine(messages[i]);
             }
+        }
+    
+        //스택(Stack)
+        /*
+            후입선출 (LIFO)
+        */
+        public void Test04()
+        {
+            Stack<int> stack = new Stack<int>();
 
+            for (int i=0; i<10; i++)
+            {
+                stack.Push(i);
+            }
+
+            while (stack.Count >0)
+            {
+                int value = stack.Pop();
+                Console.Write($"{value} , ");
+            }
         }
     }
 
@@ -64,7 +83,9 @@ namespace CSharpProject4
         {
             ArrayTest arrayTest = new ArrayTest();
             //arrayTest.Test(); 
-            arrayTest.Test02();
+            //arrayTest.Test02();
+            //arrayTest.Test03();
+            arrayTest.Test04();
         }
     }
 }

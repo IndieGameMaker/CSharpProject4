@@ -118,7 +118,6 @@ namespace CSharpProject4
             for(int i=0; i<3; i++)
             {
                 dic.Add(i, $"i={i:000}");
-                dic.
             }
 
             foreach(var _dic in dic)
